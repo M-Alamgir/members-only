@@ -14,8 +14,10 @@
       <div>
         <p><%= post.title %></p>
         <p><%= post.body %></p>
+        <p>posted by <%= post.user.name %></p>
       </div>
     <% end %>
+
   </tbody>
 </table>
 
