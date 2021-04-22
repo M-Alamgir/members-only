@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: %i[ show edit ]
+  before_action :current_user, only: %i[ new create ]
 
   # GET /posts or /posts.json
   def index

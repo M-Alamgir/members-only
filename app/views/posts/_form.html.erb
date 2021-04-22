@@ -12,6 +12,12 @@
   <% end %>
 
   <div class="actions">
-    <%= form.submit %>
+  <%= form.label :title, "Post Title" %>
+  <%= form.text_field :title %>
+
+  <%= form.label :body, "Post Body" %>
+  <%= form.text_field :body %>
+  <br/><br/>
+  <%= form.submit %>
   </div>
 <% end %>
