@@ -14,7 +14,9 @@
       <div>
         <p><%= post.title %></p>
         <p><%= post.body %></p>
+        <% if current_user %>
         <p>posted by <%= post.user.name %></p>
+        <% end %>
       </div>
     <% end %>
 
