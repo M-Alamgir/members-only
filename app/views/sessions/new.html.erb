@@ -3,7 +3,7 @@
         <%= flash[:error] %>
     </div>
     <div class="actions">
-
+    <div class="form-width">
     <%= form.label :email %>
     <%= form.email_field :email %>
 
@@ -11,5 +11,6 @@
     <%= form.password_field :password %>
 
     <%= form.submit "login" %>
+    </div>
     </div>
 <% end %>

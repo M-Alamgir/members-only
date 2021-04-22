@@ -2,9 +2,11 @@
 
 
 <% else  %>
-<h1>Create New Post</h1>
+<div class="form-width">
+<h2>Create New Post</h2>
 
 <%= render 'form', post: @post %>
 
 <%= link_to 'Back', posts_path %>
+</div>
 <% end %>

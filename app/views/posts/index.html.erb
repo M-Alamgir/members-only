@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Posts</h1>
+<h1>All Posts</h1>
 
 <table>
   <thead>
@@ -11,11 +11,11 @@
 
   <tbody>
     <% @posts.each do |post| %>
-      <div>
-        <p><%= post.title %></p>
-        <p><%= post.body %></p>
+      <div class="post-list">
+        <h4 class="post-title"><%= post.title %></h4>
+        <h6><%= post.body %></h6>
         <% if current_user %>
-        <p>posted by <%= post.user.name %></p>
+        <p class="post-title">posted by <%= post.user.name %></p>
         <% end %>
       </div>
     <% end %>

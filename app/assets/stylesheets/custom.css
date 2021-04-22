@@ -1,3 +1,28 @@
 body {
   padding: 2rem;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+
+.post-list {
+  position: relative;
+  width: 40%;
+  left: 50%;
+  text-align: left;
+  background-color: rgba(211, 211, 211, 0.322);
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  padding-bottom: 0.1rem;
+  transform: translateX(-50%);
+}
+
+.post-title {
+  color: rgb(56, 56, 56);
+}
+
+.form-width {
+  position: relative;
+  width: 40%;
+  left: 50%;
+  transform: translateX(-50%);
 }
