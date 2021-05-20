@@ -19,15 +19,8 @@
 
   <body>
     <header>
-    <% if current_user %>
-      Hi <%= current_user.name %>
-      |
-      <%= link_to 'Log out', logout_path, method: :delete %>
-      <% else %>
-      
-      <%= link_to 'log in', login_path %>
-
-      <% end %>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
     </header>
     <%= yield %>
   </body>
