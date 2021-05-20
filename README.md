@@ -1,6 +1,6 @@
 # Project: Members Only
 
-In this project, I build an Blog Post App where your members can write anonymous posts. If logged-in, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it.
+In this project, I built a Blog Post App where your members can write anonymous posts. If logged-in, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it.
 
 ### Clone the project
 
@@ -44,17 +44,22 @@ rails console
 ### View all Posts (Without Login)
 
 `http://localhost:3000/` or `http://localhost:3000/posts`
-![screenshot](app/assets/images/img-1.png)
+![screenshot](app/assets/images/img-7.png)
 
 ### View all Posts (With Login - Author name)
 
 `http://localhost:3000/` or `http://localhost:3000/posts`
-![screenshot](app/assets/images/img-4.png)
+![screenshot](app/assets/images/img-10.png)
 
 ### Login page
 
-`http://localhost:3000/login`
-![screenshot](app/assets/images/img-2.png)
+`http://localhost:3000/users/sign_in`
+![screenshot](app/assets/images/img-8.png)
+
+### Signup page
+
+`http://localhost:3000/users/sign_up`
+![screenshot](app/assets/images/img-9.png)
 
 ### Create New Post
 
