@@ -1,24 +1,97 @@
-# README
+# Project: Members Only
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this project, I built a Blog Post App where your members can write anonymous posts. If logged-in, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it.
 
-Things you may want to cover:
+### Clone the project
 
-* Ruby version
+- Clone the repo and run the app.
 
-* System dependencies
+```bash
+$ git clone https://github.com/M-Alamgir/members-only.git
+$ cd members-only
 
-* Configuration
+```
 
-* Database creation
+### Run bundle install and migrate as follows:
 
-* Database initialization
+```bash
+bundle install
 
-* How to run the test suite
+rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Run the rails console
 
-* Deployment instructions
+```bash
+rails console
 
-* ...
+```
+
+## Creating a new User
+
+``` bash
+
+> user = User.new(name: "Mark", email: "Mark@email.com", password: "password")
+> user.authenticate("wrongpassword")
+=> false
+> user.authenticate("password")
+=> #<User id: nil, name: "Mark", email: "Mark@email.com", created_at: nil, updated_at: nil, password_digest: [FILTERED]>
+
+```
+
+## Screenshots
+
+### View all Posts (Without Login)
+
+`http://localhost:3000/` or `http://localhost:3000/posts`
+![screenshot](app/assets/images/img-7.png)
+
+### View all Posts (With Login - Author name)
+
+`http://localhost:3000/` or `http://localhost:3000/posts`
+![screenshot](app/assets/images/img-10.png)
+
+### Login page
+
+`http://localhost:3000/users/sign_in`
+![screenshot](app/assets/images/img-8.png)
+
+### Signup page
+
+`http://localhost:3000/users/sign_up`
+![screenshot](app/assets/images/img-9.png)
+
+### Create New Post
+
+`http://localhost:3000/posts/new`
+![screenshot](app/assets/images/img-3.png)
+
+## Ruby version
+
+    ruby 2.7.0p0
+
+## Rails version
+
+    Rails 6.1.3.1
+
+👤 **Alamgir**
+
+- GitHub: [@M-Alamgir](https://github.com/M-Alamgir)
+- Twitter: [@Alphacrescent1](https://twitter.com/Alphacrescent1)
+
+## Acknowledgment
+The resources we have used to develop our project:
+
+- [Odin-project](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails/lessons/authentication#project-2-members-only)
+
+## Show your support
+
+Give ⭐ Star me on GitHub — it helps!
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 📝 License
+
+This project is [MIT](https://opensource.org/licenses/MIT) licensed. 
