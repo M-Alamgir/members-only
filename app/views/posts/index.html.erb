@@ -14,15 +14,12 @@
       <div class="post-list">
         <h4 class="post-title"><%= post.title %></h4>
         <h6><%= post.body %></h6>
-        <% if current_user %>
-        <p class="post-title">posted by <%= post.user.name %></p>
-        <% end %>
+        <%= show_name(post) %>
       </div>
     <% end %>
-
+    <br>
+    <%= link_to '<button type="button">Create New Post</button>'.html_safe, new_post_path %>
   </tbody>
 </table>
 
 <br>
-
-<%#= link_to 'New Post', new_post_path %>
